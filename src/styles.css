@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* CUSTOM STYLES */
+
+@media(max-width:576px){
+    .container{
+        padding: 0 2rem !important;
+    }
+}
+
+
+header .logo::before{
+    content: "";
+    background: #152A50;
+    position: absolute;
+    left: 0;
+    width: 74%;
+    bottom: 0;
+    top: 0;
+}
+
+.navigation-items.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+#myBody.active{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.organize::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 115px;
+    background-color: #152A50;
+    width: 50%;
+} 
+
+.bgg-s::before{
+    background-color: #FEDA5D;
+    width: 48%;
+}
+
+.business-done::before{
+    content: "";
+    background-image: url(../src/img/business-img.svg);
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 20%;
+    height: 462px;
+    width: 700px;
+}
+
+.height-short::before{
+    content: "";
+    background-image: url(../src/img/speaker_bg.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+}
+
+.slick-next:before, .slick-prev:before{
+    font-size: 45px !important;
+}
+
+.slick-prev{
+    left: -80px !important;
+    width: 45px !important;
+}
+
+.slick-arrow{
+    z-index: 99 !important;
+    width: 45px !important;
+}
+
+.slick-next{
+    right: -80px !important;
+}
+
+.brands .slick-next:before,.brands .slick-prev:before{
+    color: #C7EAFB !important;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:576px){
+    header .logo::before{
+        width: 95%;
+    }
+    .banner .container,.organize .container,.main .container{
+        padding: 0 !important;
+    }
+    .business-done::before {
+        height: 361px;
+        width: 361px;
+    }
+    .organize::before{
+        width: 100%;
+        height: 70px;
+    }
+    .slick-prev{
+        left: -12px !important;
+    }
+    .slick-next{
+        right: -12px !important;
+    }
+    .brands .slick-prev{
+        left: -25px !important;
+    }
+    .brands .slick-next{
+        right: -25px !important;
+    }
+    .speakers::before,.h-autoo::before,.bgg-s::before{
+        height: 0 !important;
+    }
+    .slick-next:before, .slick-prev:before{
+        font-size: 36px !important;
+        color: #152A50 !important;
+        opacity: 1 !important;
+        z-index: 99 !important;
+    }
+    .h-autoo::before{
+        height: 100px;
+    }
+    .main{
+        background-size: 100% 60% !important;
+    }
+   
+}

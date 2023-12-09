@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANADA BIGGEST</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FONT FAMILY -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- SLICK CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body class="font-Bebas" id="myBody">
+
+    <!-- HEADER -->
+    <header class="absolute w-full header top-12">
+        <div class="container">
+            <div class="header-content flex sm:flex-row flex-col-reverse">
+                <div class="logo">
+                    <a href="javascript:void(0)" class="xl:text-8xl lg:text-6xl text-5xl text-white font-normal xl:py-9 py-7 sm:pt-9 pt-0 inline-block relative">
+                        CANADA’S BIGGEST EVENT IN <br class="sm:block hidden"> VENTURE CAPITAL AND PRIVATE EQUITY
+                    </a>
+                </div>
+                <div class="sm:w-1/5 w-full m-auto mt-0 text-center relative flex sm:justify-end justify-center sm:top-0 -top-10">
+                   <img src="../src/img/menu.svg" class="sm:w-auto w-8 cursor-pointer" onclick="openMenu()" alt="">
+                </div>
+            </div> 
+        </div> 
+    </header>
+    <!-- HEADER -->
+
+    <!-- NAVIGATION MENU-->
+    <div class="navigation-items py-10 transition-opacity ease-out duration-300 fixed top-0 right-0 left-0 bottom-0 h-screen overflow-hidden bg-primary opacity-0 invisible" id="navigationItems">
+        <div class="container h-full">
+            <div class="close_menu absolute sm:right-12 right-6 cursor-pointer sm:top-12 top-6" onclick="openMenu()">
+                <span class="w-10 h-1 bg-lightcolorr inline-block -rotate-45"></span>
+                <span class="w-10 h-1 bg-lightcolorr inline-block rotate-45 -ml-10"></span>
+                <span></span>
+            </div>
+            <div class="navigations-content h-full flex flex-col justify-between text-center">
+                <div class="logo">
+                    <a href="">
+                        <img src="../src/img/menu-top-img.png" class="w-32 block m-auto" alt="">
+                    </a>
+                </div>
+                <div class="list-items">
+                    <ul>
+                        <li class="mb-16"><a class="text-4xl text-lightcolorr font-Monsterrat font-bold" href="">HOME</a></li>
+                        <li class="mb-16"><a class="text-4xl text-lightcolorr font-Monsterrat font-bold" href="">SPONSORS</a></li>
+                        <li><a class="text-4xl text-lightcolorr font-Monsterrat font-bold" href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">
+                        <img src="../src/img/bottom-menu-img.svg" class="block m-auto" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVIGATION MENU-->
+
+    <!-- BANNER -->
+    <section class="banner bg-banner bg-no-repeat bg-cover bg-center sm:h-[1250px] h-auto sm:pt-[348px] pt-[350px]">
+        <div class="container">
+            <div class="picture sm:px-0 px-8 sm:w-3/5 w-full">
+                <img src="../src/img/banner-logo.png" alt="">
+            </div>
+            <div class="meta pt-5 sm:px-0 px-8">
+                <h3 class="xl:text-4xl text-3xl text-primary font-normal">JOIN US IN VANCOUVER!</h3>
+                <p class="text-darkColor lg:text-2xl text-base lg:leading-8 leading-normal font-normal font-Monsterrat lg:w-3/5 w-full sm:pb-0 pb-3">Invest Canada brings together the brightest minds and biggest names in the industry to make connections, foster deal making, and inspiration. <br><br> CVCA members and attendees represent a variety of private and public-sector firms that manage billions of dollars of investments across the spectrum from innovative start-ups to multi-billion-dollar companies.</p>
+            </div>
+
+            <div class="signup z-10 sm:relative sm:top-14 sm:mt-0 mt-16">
+                <div class="signup-content bg-secondary border-t-4 border-primary sm:px-12 px-6">
+                    <div class="top-area">
+                        <h2 class="sm:block inline-flex flex-col sm:pt-8 pt-0 sm:pb-12 pb-0 relative sm:top-0 -top-14 text-primary xl:text-[54px] lg:text-5xl text-2xl font-normal">TICKETS GO ON SALE IN FEBRUARY. <span class="bg-primary py-1 px-2 text-white xl:leading-[54px] leading-normal"> SIGN UP TO STAY IN THE KNOW. </span></h2>
+                        <div>
+                            <div class="form-area">
+                                <div class="form flex items-center justify-between">
+                                    <div class="text-field flex-1 pr-4 md:block hidden">
+                                        <div class="input-filed">
+                                            <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="text" name="" id="" placeholder="First Name" value="John">
+                                        </div>
+                                        <label for="" class="lg:text-lg text-base font-normal text-primary uppercase">First Name*</label>
+                                    </div>
+                                    <div class="text-field flex-1 pr-4 md:block hidden">
+                                        <div class="input-filed">
+                                            <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="text" name="" id="" placeholder="Last Name" value="Smith">
+                                        </div>
+                                        <label for="" class="lg:text-lg text-base font-normal text-primary uppercase">Last Name*</label>
+                                    </div>
+                                    <div class="text-field flex-1 pr-4 md:block hidden">
+                                        <div class="input-filed">
+                                            <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="email" name="" id="" placeholder="yourname@email.com" value="">
+                                        </div>
+                                        <label for="" class="lg:text-lg text-base font-normal text-primary uppercase">EMAIL*</label>
+                                    </div>
+                                    <div class="text-field flex-1 pr-4 md:block hidden">
+                                        <div class="input-filed">
+                                            <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="text" name="" id="" placeholder="Your Company" value="">
+                                        </div>
+                                        <label for="" class="lg:text-lg text-base font-normal text-primary uppercase">Company name*</label>
+                                    </div>
+                                    <div class="submit">
+                                        <a href="" class="text-4xl text-lightcolorr bg-primary py-2 px-5 font-Monsterrat font-bold">
+                                            SIGN UP NOW
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-primary text-xs xl:leading-[54px] leading-normal pt-4 pb-6 font-Monsterrat">By submitting your email address, you agree to receive emails from us. We may send you marketing emails, product updates, and other promotional materials. You can opt-out at any time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER -->
+
+    <!-- BUSINESS DONE -->
+    <section class="business-done bg-primary 2xl:pt-80 xl:pt-24 lg:pt-24 pt-12 relative">
+        <div class="container">
+            <div class="business-content">
+                <h2 class="sm:text-center text-left text-8xl text-lightcolorr font-normal">GET BUSINESS DONE.</h2>
+                <div class="flex lg:flex-flex-nowrap flex-wrap justify-center md:px-20 px-0 xl:pt-14 lg:pt-12 pt-8 font-Monsterrat xl:pb-40">
+                    <div class="lg:w-1/4 md:w-2/4 w-full lg:text-center text-left lg:mb-0 mb-14">
+                        <label for="" class="text-lightcolorr xl:text-8xl lg:text-7xl text-6xl font-bold block">41%</label>
+                        <span class="xl:text-2xl lg:text-base text-lightcolorr font-bold">General Partner</span>
+                    </div>
+                    <div class="lg:w-1/4 md:w-2/4 w-full lg:text-center text-left lg:mb-0 mb-14">
+                        <label for="" class="text-lightcolorr xl:text-8xl lg:text-7xl text-6xl font-bold block">26%</label>
+                        <span class="xl:text-2xl lg:text-base text-lightcolorr font-bold">Limited Partner</span>
+                    </div>
+                    <div class="lg:w-1/4 md:w-2/4 w-full lg:text-center text-left lg:mb-0 mb-14">
+                        <label for="" class="text-lightcolorr xl:text-8xl lg:text-7xl text-6xl font-bold block">17%</label>
+                        <span class="xl:text-2xl lg:text-base text-lightcolorr font-bold">Professional Services</span>
+                    </div>
+                    <div class="lg:w-1/4 md:w-2/4 w-full lg:text-center text-left lg:mb-0 mb-14">
+                        <label for="" class="text-lightcolorr xl:text-8xl lg:text-7xl text-6xl font-bold block">15%</label>
+                        <span class="xl:text-2xl lg:text-base text-lightcolorr font-bold">Industry, Government & Other Stakeholders</span>
+                    </div>
+                </div>
+                
+                <div class="organize py-2 pr-14">
+                    <div class="container">
+                        <h2 class="xl:text-7xl lg:text-6xl text-4xl text-lightcolorr font-normal relative sm:top-8 top-0">PAST ATTENDEE ORGANIZATIONS</h2>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <!-- BUSINESS DONE -->
+
+    <!-- TEAM SLIDER -->
+    <div class="container">
+        <div class="slider brands sm:mt-24 pt-0">
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-1.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-2.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-3.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-4.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-1.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-2.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-3.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="picture">
+                    <img src="../src/img/brand-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TEAM SLIDER -->
+
+    <!-- SPONSORSHIP -->
+    <section class="team-slider bg-lightcolorr xl:py-11 py-8">
+        <div class="container">
+            <div class="slider-content flex md:flex-row flex-col justify-between sm:items-center items-start">
+                <div class="title lg:w-3/5">
+                    <h2 class="text-primary xl:text-[54px] lg:text-5xl text-4xl font-normal">SPONSORSHIP OPPORTUNITIES</h2>
+                    <p class="text-primary lg:text-2xl text-base lg:leading-8 leading-normal font-normal pt-3 font-Monsterrat">Explore the various partner and sponsorship opportunities for Invest Canada 23 and discover the multiple ways you can benefit from this leading industry gathering.</p>
+                </div>
+                <div class="actions">
+                    <a href="" class="mt-2 xl:text-4xl lg:text-3xl text-2xl text-lightcolorr inline-block sm:text-right text-left bg-primary py-3 px-5 font-bold font-Monsterrat">
+                        CONNECT WITH US
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="organize py-2 sm:pr-14 pr-0 relative sm:top-20 top-8 speakers">
+            <div class="container">
+                <h2 class="sm:bg-transparent sm:pl-0 pl-8 sm:py-0 py-3 bg-primary xl:text-7xl lg:text-6xl text-4xl text-lightcolorr font-normal relative top-6">MEET SOME OF OUR PAST SPEAKERS</h2>
+            </div>
+        </div>
+    </section>
+    <!-- SPONSORSHIP -->
+
+    <!-- OPPORTUNITIES -->
+    <div class="lg:pt-28 md:pt-20 sm:pt-14 pt-6 pb-16 height-short relative">
+        <div class="container">
+            <p class="text-primary lg:text-2xl text-base lg:leading-8 leading-normal font-normal pt-3 font-Monsterrat">Enrich your knowledge through expert-led panel sessions, in-depth <br> discussions and keynote presentations from industry leaders.</p>
+        
+            <div class="slider relative top-14">
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/randy.png" class="m-auto" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">Randy Ballingall</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">Founder, Investopedia</span>
+                </div>
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/david.png" class="m-auto w-72" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">David Roberts</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">CEO, OmniCorp</span>
+                </div>
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/ankiti.png" class="m-auto" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">Ankiti Bose</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">CFO, NSXOrg</span>
+                </div>
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/anton.png" class="m-auto" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">Anton Marakov</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">Chess Grandmaster</span>
+                </div>
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/randy.png" class="m-auto" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">Randy Ballingall</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">Founder, Investopedia</span>
+                </div>
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/david.png" class="w-72 m-auto" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">David Roberts</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">CEO, OmniCorp</span>
+                </div>
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/ankiti.png" class="m-auto" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">Ankiti Bose</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">CFO, NSXOrg</span>
+                </div>
+                <div class="text-center">
+                    <div class="picture">
+                        <img src="../src/img/anton.png" class="m-auto" alt="">
+                    </div>
+                    <h4 class="text-primary font-bold font-Monsterrat text-2xl pt-2">Anton Marakov</h4>
+                    <span class="text-primary font-normal italic font-Monsterrat text-lg pt-2">Chess Grandmaster</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OPPORTUNITIES -->
+
+    <!-- FOOTER -->
+    <div class="main sm:bg-footer-bg bg-footer-mob-bg bg-no-repeat bg-bottom lg:pb-20 pb-14 sm:mt-20 mt-10">
+        <div class="container">
+            <div class="bottom-content">
+                <div class="flex lg:flex-row flex-col">
+                    <div class="organize py-2 sectionn w-full h-autoo">
+                        <h2 class="sm:bg-transparent sm:pl-0 pl-8 sm:py-0 py-3 bg-primary absolute left-0 right-0 xl:text-7xl lg:text-6xl text-4xl text-lightcolorr font-normal sm:relative sm:top-6">The Invest Canada Experience</h2>
+                        <p class="text-primary lg:text-2xl text-base lg:leading-8 leading-normal font-normal sm:pt-16 pt-32 font-Monsterrat sm:px-0 px-8">If you’re looking to network and get deals done, learn <br class="md:block hidden"> about the latest trends and developments, or be <br class="md:block hidden"> inspired by some of the best minds in the business, <br> Invest Canada is the event for you.</p>
+                    </div>
+                    <h2 class=" text-primary xl:text-[54px] lg:text-5xl text-4xl font-normal w-full md:pl-36 sm:pl-20 pl-8 sm:py-0 pt-3 sm:px-0 px-8">“One of the best networking opportunities in this space for investors, founders and service providers alike. Well worth your time and money.”</h2>
+                </div>
+            </div>
+            <div class="signup-bottom xl:pt-32 lg:pt-28">
+                <div class="organize py-2 pr-14 bgg-s">
+                    <h2 class="sm:block hidden sm:bg-transparent sm:pl-0 pl-8 sm:py-0 py-3 bg-secondary absolute left-0 right-0 xl:text-7xl lg:text-6xl text-4xl text-primary font-normal sm:relative sm:top-6">SIGN UP TO STAY IN THE KNOW</h2>
+                </div>
+                <div class="flex lg:flex-row flex-col-reverse">
+                    <div class="sm:block hidden signup-content lg:w-1/2 w-full bg-primary border-t-4 pt-20 px-20">
+                        <div class="top-area">
+                            <div>
+                                <div class="form-area">
+                                    <div class="form flex items-center flex-wrap justify-between">
+                                        <div class="text-field md:block hidden lg:w-1/2 w-full pr-4 mb-9">
+                                            <div class="input-filed">
+                                                <input class="font-Monsterrat pb-2 text-white w-full bg-transparent outline-none placeholder-text-white border-b border-dashed border-text-white xl:text-2xl lg:text-lg" type="text" name="" id="" placeholder="First Name" value="John">
+                                            </div>
+                                            <label for="" class="lg:text-lg text-base font-normal text-white uppercase">First Name*</label>
+                                        </div>
+                                        <div class="text-field md:block hidden lg:w-1/2 w-full pr-20 mb-9">
+                                            <div class="input-filed">
+                                                <input class="font-Monsterrat text-white w-full bg-transparent outline-none placeholder-text-white border-b border-dashed border-text-white xl:text-2xl lg:text-lg pb-2" type="text" name="" id="" placeholder="Last Name" value="Smith">
+                                            </div>
+                                            <label for="" class="lg:text-lg text-base font-normal text-white uppercase">Last Name*</label>
+                                        </div>
+                                        <div class="text-field md:block hidden w-full pr-60 mb-9">
+                                            <div class="input-filed">
+                                                <input class="font-Monsterrat text-white w-full bg-transparent outline-none placeholder-text-white border-b border-dashed border-text-white xl:text-2xl lg:text-lg pb-2" type="text" name="" id="" placeholder="yourname@email.com" value="">
+                                            </div>
+                                            <label for="" class="lg:text-lg text-base font-normal text-white uppercase">EMAIL**</label>
+                                        </div>
+                                        <div class="text-field pr-20 md:block hidden lg:w-1/2 w-full mb-9">
+                                            <div class="input-filed">
+                                                <input class="font-Monsterrat text-white w-full bg-transparent outline-none placeholder-text-white border-b border-dashed border-text-white xl:text-2xl lg:text-lg pb-2" type="text" name="" id="" placeholder="Your Company" value="">
+                                            </div>
+                                            <label for="" class="lg:text-lg text-base font-normal text-white uppercase">Company name**</label>
+                                        </div>
+                                        <div class="submit lg:w-1/2 w-full mb-9">
+                                            <a href="" class="text-4xl text-primary bg-secondary py-2 px-5">
+                                                SIGN UP NOW
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lightcolorr text-xs xl:leading-3 leading-normal pt-4 pb-6 font-Monsterrat">By submitting your email address, you agree to receive emails from us. We may send you marketing emails, product updates, and other promotional materials. You can opt-out at any time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup z-10 sm:relative sm:top-20 sm:mt-0 mt-16 sm:hidden block">
+                        <div class="signup-content bg-primary border-t-4 border-secondary sm:px-12 px-6">
+                            <div class="top-area">
+                                <h2 class="sm:block inline-flex flex-col sm:pt-8 pt-0 sm:pb-12 pb-0 relative sm:top-0 -top-10 text-primary xl:text-[54px] lg:text-5xl md:text-3xl text-2xl font-normal">TICKETS GO ON SALE IN FEBRUARY. <span class="bg-secondary py-1 px-2 text-primary xl:leading-[54px] leading-normal"> SIGN UP TO STAY IN THE KNOW. </span></h2>
+                                <div>
+                                    <div class="form-area">
+                                        <div class="form flex items-center justify-between">
+                                            <div class="text-field flex-1 pr-4 md:block hidden">
+                                                <div class="input-filed">
+                                                    <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="text" name="" id="" placeholder="First Name" value="John">
+                                                </div>
+                                                <label for="" class="lg:text-lg text-base font-normal text-primary">First Name*</label>
+                                            </div>
+                                            <div class="text-field flex-1 pr-4 md:block hidden">
+                                                <div class="input-filed">
+                                                    <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="text" name="" id="" placeholder="First Name" value="John">
+                                                </div>
+                                                <label for="" class="lg:text-lg text-base font-normal text-primary">First Name*</label>
+                                            </div>
+                                            <div class="text-field flex-1 pr-4 md:block hidden">
+                                                <div class="input-filed">
+                                                    <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="text" name="" id="" placeholder="First Name" value="John">
+                                                </div>
+                                                <label for="" class="lg:text-lg text-base font-normal text-primary">First Name*</label>
+                                            </div>
+                                            <div class="text-field flex-1 pr-4 md:block hidden">
+                                                <div class="input-filed">
+                                                    <input class="text-darkColor w-full bg-transparent outline-none placeholder-lightColor border-b border-dashed border-lightColor222 xl:text-2xl lg:text-lg pb-1 font-Monsterrat" type="text" name="" id="" placeholder="First Name" value="John">
+                                                </div>
+                                                <label for="" class="lg:text-lg text-base font-normal text-primary">First Name*</label>
+                                            </div>
+                                            <div class="submit">
+                                                <a href="" class="text-4xl text-primary bg-secondary py-2 px-4 font-Monsterrat font-bold">
+                                                    SIGN UP NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-lightcolorr text-xs xl:leading-[54px] leading-normal pt-6 pb-6 font-Monsterrat">By submitting your email address, you agree to receive emails from us. We may send you marketing emails, product updates, and other promotional materials. You can opt-out at any time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full sm:px-0 px-8">
+                        <div class="picture lg:w-2/4 w-full ml-auto">
+                            <img src="../src/img/IC23.png" class="lg:ml-auto ml-0" alt="">
+                        </div>
+                        <div class="picture lg:w-3/5 w-full ml-auto">
+                            <img src="../src/img/vancouver.png" class="lg:ml-auto ml-0" alt="">
+                        </div>
+                        <div class="social-icons flex md:justify-end justify-between lg:pt-8 pt-5 lg:pb-24 pb-16">
+                            <div class="picture">
+                                <a href="">
+                                    <img src="../src/img/vimeo.svg" class="lg:mr-8 mr-4" alt="">
+                                </a>
+                            </div>
+                            <div class="picture">
+                                <a href="">
+                                    <img src="../src/img/linkedin.svg" class="lg:mr-8 mr-4" alt="">
+                                </a>
+                            </div>
+                            <div class="picture">
+                                <a href="">
+                                    <img src="../src/img/twitter.svg"  alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="picture">
+                            <img src="../src/img/footer-logo3.svg" class="lg:ml-auto ml-0" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    
+    
+</body>
+
+
+
+        <!-- SLIDER JS -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+        <script>
+             $('.slider').slick({
+        dots: false,
+        infinite: false,
+        arrows : true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        
+        ]
+        });
+
+        </script>
+
+        <!-- CUSTOM JS -->
+
+        <script src="../public/js/main.js"></script>
+
+</html>
